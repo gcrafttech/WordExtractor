@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  word-service:
+    container_name: word-service
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8000:8000'
+    environment:
+      PROFILE: docker
